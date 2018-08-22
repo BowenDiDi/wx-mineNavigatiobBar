@@ -30,6 +30,21 @@ Component({
      * 组件加载
      */
     created: function () {
+        // let pageStack = app.globalData.pageStack
+        // if (pageStack.length >= 1) {
+        //     console.log('header现在是back')
+        //     this.setData({
+        //         navPage: 'back'
+        //     })
+        //     console.log('header现在是back', this.data.navPage)
+        // } else {
+        //     console.log('header现在是home')
+        //     this.setData({
+        //         navPage: 'home'
+        //     })
+        // }
+    },
+    attached: function () {
         let pageStack = app.globalData.pageStack
         if (pageStack.length >= 1) {
             console.log('header现在是back')
