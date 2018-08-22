@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+}
+
+.header-placeholder {
+  width: 100%;
+  height: 64px;
+}
+
+.header-wrap {
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  padding-top: 20px;
+}
+
+.header-wrap .back {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0 0 0 16px;
+  /*color: inherit;*/
+  /*background-color: transparent;*/
+}
+.header-wrap .home {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0 0 0 16px;
+}
+
+/*.header-wrap .back::before {*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*font-family: "icon";*/
+  /*font-size: 24px;*/
+  /*line-height: 1;*/
+  /*content: "\e73b";*/
+  /*border: 0;*/
+/*}*/
+
+.header-title {
+  flex: 1;
+  padding: 0 16px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.header-right {
+  width: 56px;
+}
+
+.header.isx .header-wrap {
+  padding-top: 44px;
+}
+
+.header.isx .header-placeholder {
+  height: 88px;
+}
+
+.header.android .header-placeholder {
+  height: 72px;
+}
+
+.header.android .header-wrap {
+  height: 48px;
+  padding-top: 24px;
+}
+
+.header.android .header-wrap .back::before {
+  content: "\e734";
+}
+
+.header.android .header-title {
+  text-align: left;
+}

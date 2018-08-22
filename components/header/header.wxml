@@ -1,0 +1,12 @@
+<view
+class="header {{[isx ? 'isx' : '', isAndroid ? 'android' : '']}}">
+  <view class="header-placeholder" wx:if="{{fixed}}" />
+  <view class="header-wrap" style="{{fixed ? 'position:fixed' : ''}};background-color:{{backgroundColor}};color:{{color}};">
+    <image class="back" bindtap="backFunction" wx:if="{{navPage === 'back'}}" src="./arrow.svg"></image>
+    <image class="home" bindtap="goHomeFunction" wx:if="{{navPage === 'home'}}" src="./home.svg"></image>
+    <view class="header-title">
+      <slot></slot>
+    </view>
+    <view class="header-right" wx:if="{{back}}" />
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我是页面3",
+    "usingComponents": {
+      "header": "../../components/header/header"
+    }
+}

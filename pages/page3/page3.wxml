@@ -1,0 +1,2 @@
+<header background-color="#fff" color="#000" fixed>Page3</header>
+<button bindtap='jumpBack'>回主页</button>

@@ -1,0 +1,2 @@
+<header background-color="#fff" color="#000" fixed>Page2</header>
+<button bindtap='jump3'>跳转re到P3</button>
